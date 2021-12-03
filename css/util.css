@@ -519,7 +519,7 @@
 .p-b-60 {padding-bottom: 60px;}
 .p-b-61 {padding-bottom: 61px;}
 .p-b-62 {padding-bottom: 62px;}
-.p-b-63 {padding-bottom: 63px;}
+.p-b-63 {padding-bottom: 63px;padding-left: 50px;}
 .p-b-64 {padding-bottom: 64px;}
 .p-b-65 {padding-bottom: 65px;}
 .p-b-66 {padding-bottom: 66px;}
@@ -3579,13 +3579,12 @@ SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE
 .bo4 {border: 4px solid #ec1d25;}
 
 .bo5-b {border-bottom: 1px solid #e6e6e6;}
-.bo5-r {border-right: 1px solid #e6e6e6;}
+.bo5-r {box-shadow: 0px 0px 5px #000000;}
 
 .bo6-r {border-right: 1px solid #808080;}
 
 .bo7 {border: 2px solid #e6e6e6;}
 .bo8 {border: 5px solid white;}
-
 
 /* ------------------------------------ */
 .bo-rad-2 {border-radius: 2px;} 
@@ -3738,6 +3737,9 @@ EFFECT   EFFECT   EFFECT   EFFECT   EFFECT   EFFECT  EFFECT
   background-color: rgba(0,0,0,0.5);
 }
 
+.col-md-6 {
+    margin: 0px 0px 20px 0px;
+}
 
 /*=========================================================
 RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE 
