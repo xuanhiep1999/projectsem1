@@ -30,6 +30,15 @@
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!--===============================================================================================-->
+    <style>
+        .error{
+            color: red;
+            font-size: 12px;
+        }
+    </style>
 </head>
 <body class="animsition">
 
@@ -67,18 +76,7 @@
                                     <a class="dropdown-item" href="organizeSeminars.html">Organize Seminars,Conferences</a>
                                     <a class="dropdown-item" href="exhibition.html">Exhibition</a>
                                 </div>
-                                <!-- Dropdown list -->
-<!--                                <div class="dropdown-menu">-->
-<!--                                    <a class="dropdown-item" href="outdoorService.html">Outdoor Service</a>-->
-<!--                                    <a class="dropdown-item" href="packageWeddingService.html">Package Wedding Service</a>-->
-<!--                                    <a class="dropdown-item" href="birthdayParty.html">Birthday Party</a>-->
-<!--                                    <a class="dropdown-item" href="#">Exhibiton</a>-->
-<!--                                    <a class="dropdown-item" href="organizeSeminars.html">Conference</a>-->
-<!--                                    &lt;!&ndash;                                    <div class="dropdown-divider"></div>&ndash;&gt;-->
-<!--                                    &lt;!&ndash;                                    <a class="dropdown-item" href="#">Other services</a>&ndash;&gt;-->
-<!--                                </div>-->
                             </li>
-
                             <li>
                                 <a href="gallery.html">Gallery</a>
                             </li>
@@ -86,11 +84,6 @@
                             <li>
                                 <a href="about.html">About</a>
                             </li>
-
-                            <!--                            <li>-->
-                            <!--                                <a href="blog.html">Blog</a>-->
-                            <!--                            </li>-->
-
                             <li>
                                 <a href="contact.html">Contact</a>
                             </li>
@@ -215,72 +208,78 @@
             Outdoor event venues can be beaches, stadiums, parks, cultural palaces, golf courses, etc. </p>
         <div class="row">
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Beach</h5>
+                <h5 id="Beach" class="t-h54">Beach</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img class="img" src="images/beach.jpg" alt="IMG-OUR">
+                    <img id="img_Beach" class="img" src="images/beach.jpg" alt="IMG-OUR">
                 </div>
                 <h6 >Outdoor event with splendid and romantic space</h6>
                 <h6> Organization date: Contact</h6>
+                <input style="height: 30px;width: 30px" onclick="getdata('Beach','img_Beach',this,'PLACES')" type="radio" name="PLACES">
                 <h5 class="t-h51">Fee: Contact</h5>
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Stadium</h5>
+                <h5 id="Stadium" class="t-h54">Stadium</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img class="img" src="images/san-van-dong.jpg" alt="IMG-OUR">
+                    <img id="img_Stadium" class="img" src="images/san-van-dong.jpg" alt="IMG-OUR">
                 </div>
                 <h6>The Riverside Stadium</h6>
                 <h6> Organization date: Contact</h6>
+                <input style="height: 30px;width: 30px" onclick="getdata('Stadium','img_Stadium',this,'PLACES')" type="radio" name="PLACES">
                 <h5 class="t-h51">Fee: $159 Per Day</h5>
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Park</h5>
+                <h5 id="Park" class="t-h54">Park</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img class="img" src="images/park.jpg" alt="IMG-OUR">
+                    <img id="img_Park" class="img" src="images/park.jpg" alt="IMG-OUR">
                 </div>
                 <h6 >
                     Balboa Park-Best Western Santee
                 </h6>
                 <h6> Organization date: Contact</h6>
+                <input style="height: 30px;width: 30px" onclick="getdata('Park','img_Park',this,'PLACES')" type="radio" name="PLACES">
                 <h5 class="t-h51">Fee: Contact</h5>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Cultural House,</h5>
+                <h5 id="Cultural" class="t-h54">Cultural House,</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img class="img" src="images/cung-van-hoa.jpg" alt="IMG-OUR">
+                    <img id="img_Cultural" class="img" src="images/cung-van-hoa.jpg" alt="IMG-OUR">
                 </div>
                 <h6 >Palace of Culture, Labor and Friendship between Vietnam and the Soviet Union</h6>
                 <h6> Organization date: Contact</h6>
+                <input style="height: 30px;width: 30px" onclick="getdata('Cultural','img_Cultural',this,'PLACES')" type="radio" name="PLACES">
                 <h5 class="t-h51">Fee: Contact</h5>
 
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Golf Course </h5>
+                <h5 id="Course" class="t-h54">Golf Course </h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img class="img" src="images/goft.jpg" alt="IMG-OUR">
+                    <img id="img_Course" class="img" src="images/goft.jpg" alt="IMG-OUR">
                 </div>
                 <h6>Stone Valley Golf & Resort</h6>
                 <h6> Organization date: Contact</h6>
+                <input style="height: 30px;width: 30px" onclick="getdata('Course','img_Course',this,'PLACES')" type="radio" name="PLACES">
                 <h5 class="t-h51">Fee: Contact</h5>
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Thao Dien Village</h5>
+                <h5 id="Village" class="t-h54">Thao Dien Village</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img class="img" src="images/thao-dien.jpg" alt="IMG-OUR">
+                    <img id="img_Village" class="img" src="images/thao-dien.jpg" alt="IMG-OUR">
                 </div>
                 <h6 >
                     Coming to Thao Dien Village, you will feel like you are lost in the world of Vietnamese culture through the familiar Vietnamese traditional architecture, but equally luxurious and elegant mixed with European and international architecture. art deco style.
                 </h6>
                 <h6> Organization date: Contact</h6>
+                <input style="height: 30px;width: 30px" onclick="getdata('Village','img_Village',this,'PLACES')" type="radio" name="PLACES">
                 <h5 class="t-h51">Fee: Contact</h5>
 
             </div>
@@ -322,30 +321,33 @@
         </p>
         <div class="row">
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54"> Backdrop</h5>
+                <h5 id="Backdrop" class="t-h54"> Backdrop</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img class="img" src="images/backrop1.jpg" alt="IMG-OUR">
+                    <img id="img_Backdrop" class="img" src="images/backrop1.jpg" alt="IMG-OUR">
                 </div>
                 <h6 class="">Printed in large size program name, logo and company name.</h6>
+                <input style="height: 30px;width: 30px;margin-top: 15px" onclick="getDESIGN('Backdrop','img_Backdrop',this,'Equipment')" type="radio" name="Design">
                 <h5 class="t-h52">Fee: $39  </h5>
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Sound & Light</h5>
+                <h5 id="Sound" class="t-h54">Sound & Light</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img class="img" src="images/sound-light1.jpg" alt="IMG-OUR">
+                    <img id="img_Sound" class="img" src="images/sound-light1.jpg" alt="IMG-OUR">
                 </div>
                 <h6>Sound and light system with large capacity and technical guarantee.</h6>
+                <input style="height: 30px;width: 30px;margin-top: 15px" onclick="getDESIGN('Sound','img_Sound',this,'Equipment')" type="radio" name="Design">
                 <h5 class="t-h52">Fee: $199 </h5>
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Stage Outdoor </h5>
+                <h5 id="Stage" class="t-h54">Stage Outdoor </h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img class="img" src="images/san-khau.jpg" alt="IMG-OUR">
+                    <img id="img_Stage" class="img" src="images/san-khau.jpg" alt="IMG-OUR">
                 </div>
                 <h6>The stage is equipped with standard space tarpaulin to prevent in case of bad weather, barrier system and large tonnage space truss.</h6>
+                <input style="height: 30px;width: 30px;margin-top: 15px" onclick="getDESIGN('Stage','img_Stage',this,'Equipment')" type="radio" name="Design">
 
                 <h5 class="t-h52">Fee: $299 </h5>
 
@@ -353,31 +355,34 @@
         </div>
         <div class="row">
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Tables & Chairs</h5>
+                <h5 id="Tables" class="t-h54">Tables & Chairs</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img class="img" src="images/ban-ghe1.jpg" alt="IMG-OUR">
+                    <img id="img_Tables" class="img" src="images/ban-ghe1.jpg" alt="IMG-OUR">
                 </div>
                 <h6>Arranged around the stage, can be moved at will</h6>
+                <input style="height: 30px;width: 30px;margin-top: 15px" onclick="getDESIGN('Tables','img_Tables',this,'Equipment')" type="radio" name="Design">
                 <h5 class="t-h52">Fee: $99 </h5>
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Umbrella</h5>
+                <h5 id="Umbrella" class="t-h54">Umbrella</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img class="img" src="images/Event-Umbrella.jpg" alt="IMG-OUR">
+                    <img id="img_Umbrella" class="img" src="images/Event-Umbrella.jpg" alt="IMG-OUR">
                 </div>
                 <h6>Will be served depending on the weather situation</h6>
+                <input style="height: 30px;width: 30px;margin-top: 15px" onclick="getDESIGN('Umbrella','img_Umbrella',this,'Equipment')" type="radio" name="Design">
                 <h5 class="t-h52">Fee: $29 </h5>
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Fence</h5>
+                <h5 id="Fence" class="t-h54">Fence</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img class="img" src="images/hang-rao.jpg" alt="IMG-OUR">
+                    <img id="img_Fence" class="img" src="images/hang-rao.jpg" alt="IMG-OUR">
                 </div>
                 <h6>Separating the area, avoiding confusion, protecting children</h6>
+                <input style="height: 30px;width: 30px;margin-top: 15px" onclick="getDESIGN('Fence','img_Fence',this,'Equipment')" type="radio" name="Design">
                 <h5 class="t-h52">Fee: $59 o</h5>
 
             </div>
@@ -422,57 +427,63 @@
         <p class="t-center m-b-22 size3 m-l-r-auto">
             The issue of the menu during the event plays a very important role. The staff is dedicated to serving and ensuring food hygiene. The menu also needs to be diverse and to suit the taste of the guests.        </p>
         <div class="row">
-            <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Fast Food</h5>
+            <div  class="col-md-4 p-b-30">
+                <h5 id="Fast" class="t-h54">Fast Food</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img class="img" src="images/fast-food1.jpg" alt="IMG-OUR">
+                    <img id="img_Fast" class="img" src="images/fast-food1.jpg" alt="IMG-OUR">
                 </div>
+                <input style="height: 30px;width: 30px;margin-top: 15px" onclick="getfoot('Fast','img_Fast',this,'Food and Drink')" type="radio" name="food">
                 <h5 class="t-h52">Fee: $19 Per Pack </h5>
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Drinks</h5>
+                <h5 id="Drinks" class="t-h54">Drinks</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img class="img" src="images/drink.jpg" alt="IMG-OUR">
+                    <img id="img_Drinks" class="img" src="images/drink.jpg" alt="IMG-OUR">
                 </div>
+                <input style="height: 30px;width: 30px;margin-top: 15px" onclick="getdrink('Drinks','img_Drinks',this,'Food and Drink')" type="radio" name="drink">
                 <h5 class="t-h52">Fee: $9 Per Bottle</h5>
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Fruit</h5>
+                <h5 id="Fruit" class="t-h54">Fruit</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img class="img" src="https://wallup.net/wp-content/uploads/2014/10/nature/Fruit_Salad.jpg" alt="IMG-OUR">
+                    <img id="img_Fruit" class="img" src="https://wallup.net/wp-content/uploads/2014/10/nature/Fruit_Salad.jpg" alt="IMG-OUR">
                 </div>
+                <input style="height: 30px;width: 30px;margin-top: 15px" onclick="getfoot('Fruit','img_Fruit',this,'Food and Drink')" type="radio" name="food">
                 <h5 class="t-h52">Fee: $29 per pack</h5>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Cakes</h5>
+                <h5 id="Cakes" class="t-h54">Cakes</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img class="img" src="images/food-drinks1.jpg" alt="IMG-OUR">
+                    <img id="img_Cakes" class="img" src="images/food-drinks1.jpg" alt="IMG-OUR">
                 </div>
+                <input style="height: 30px;width: 30px;margin-top: 15px" onclick="getfoot('Cakes','img_Cakes',this,'Food and Drink')" type="radio" name="food">
                 <h5 class="t-h52">Fee: $99 </h5>
 
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">BBQ</h5>
+                <h5 id="BBQ" class="t-h54">BBQ</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img class="img" src="images/BBQ.jpg" alt="IMG-OUR">
+                    <img id="img_BBQ" class="img" src="images/BBQ.jpg" alt="IMG-OUR">
                 </div>
+                <input style="height: 30px;width: 30px;margin-top: 15px" onclick="getfoot('BBQ','img_BBQ',this,'Food and Drink')" type="radio" name="food">
                 <h5 class="t-h52">Fee: $49</h5>
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Wine</h5>
+                <h5 id="Wine" class="t-h54">Wine</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img class="img" src="images/wine.jpg" alt="IMG-OUR">
+                    <img id="img_Wine" class="img" src="images/wine.jpg" alt="IMG-OUR">
                 </div>
+                <input style="height: 30px;width: 30px;margin-top: 15px" onclick="getdrink('Wine','img_Wine',this,'Food and Drink')" type="radio" name="drink">
                 <h5 class="t-h52">Fee: $49 </h5>
 
             </div>
@@ -481,16 +492,6 @@
 </section>
 
 <div class="section-signup bg1-pattern  p-b-85 text-center">
-    <!-- Button trigger modal -->
-    <div class="row justify-content-center">
-        <div class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5">
-            <button type="button" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10 " data-toggle="modal" data-target="#exampleModal">
-                Choose Service
-            </button>
-        </div>
-    </div>
-
-
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -502,11 +503,17 @@
                     </button>
                 </div>
                 <div class="modal-body">
+
                     <div class="container">
-                        <h3 class="tit7 t-center p-b-62 p-t-105">
+                        <div id="from_check" style=";width: 100%; margin-bottom: 15px"></div>
+                        <div id="DESIGN" style=";width: 100%; margin-bottom: 15px"></div>
+                        <div id="foot" style=";width: 100%; margin-bottom: 15px"></div>
+                        <div id="drink" style=";width: 100%; margin-bottom: 15px"></div>
+
+
+                        <h3 class="tit7 t-center">
                             Send us a Message
                         </h3>
-
                         <form class="wrap-form-reservation size22 m-l-r-auto" id="form">
                             <div class="row">
                                 <div class="col-md-4">
@@ -570,10 +577,10 @@
             </div>
         </div>
     </div>
-    <!--    <h2  style="text-align: center" class="t-h53">Choose Service</h2>-->
-    <!--    <form class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5">-->
-    <!--        <a href="choose_service.html" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Choose</a>-->
-    <!--    </form>-->
+    <h2  style="text-align: center" class="t-h53">Choose Service</h2>
+    <form class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5">
+        <buttom type="button" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10" data-toggle="modal" data-target="#exampleModal">Choose</buttom>
+    </form>
 </div>
 
 <!-- Footer -->
@@ -759,7 +766,7 @@
 
 <!--===============================================================================================-->
 <script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
 <script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->
 <script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
@@ -784,5 +791,84 @@
 <!--===============================================================================================-->
 <script src="js/main.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+<script>
+    $(function () {
+        $('#form').validate({
+            rules: {
+                email: {
+                    required: true,
+                },
+                name: {
+                    required: true,
+                },
+                phone: {
+                    required: true,
+                },
+            },
+            messages: {
+                email: {
+                    required: 'Please Enter Email',
+                    maxlength: 'Email name is limited to 255 characters',
+                    email: 'Please enter true email'
+                },
+                name: {
+                    required: 'Please Enter Name',
+                },
+                phone: {
+                    required: 'Please Enter Phone',
+                },
+            },
+        })
+    })
+
+    function getdata(title,img,event,tag) {
+
+        var from_check = document.getElementById('from_check')
+        var title = document.getElementById(title)
+        var img = document.getElementById(img)
+        var event = document.getElementById(event)
+        var tag = tag
+        from_check.innerHTML = ''
+        from_check.innerHTML+=`<div><div style="display: flex;"><h5 style="height: auto!important;">${tag}
+ :&ensp;</h5><h5 style="height: auto!important;"> ${title.innerText}</h5></div><img style="width: 80px;height: 60px;
+ object-fit: cover; margin-bottom: 15px" src="${img.src}" alt=""></div>`
+    }
+    function getDESIGN(title,img,event,tag) {
+
+        var DESIGN = document.getElementById('DESIGN')
+        var title = document.getElementById(title)
+        var img = document.getElementById(img)
+        var event = document.getElementById(event)
+        var tag = tag
+        DESIGN.innerHTML = ''
+        DESIGN.innerHTML+=`<div><div style="display: flex;"><h5 style="height: auto!important;">${tag} :&ensp;</h5><h5 style="height: auto!important;"> ${title.innerText}</h5></div><img style="width: 80px;height: 60px; object-fit: cover; margin-bottom: 15px" src="${img.src}" alt=""></div>`
+    }
+    function getdrink(title,img,event,tag) {
+
+
+        var drink = document.getElementById('drink')
+        var title = document.getElementById(title)
+        var img = document.getElementById(img)
+        var event = document.getElementById(event)
+        var tag = tag
+        drink.innerHTML = ''
+        drink.innerHTML+=`<div><div style="display: flex;"><h5 style="height: auto!important;">${tag}
+:&ensp;</h5><h5 style="height: auto!important;"> ${title.innerText}</h5></div><img style="width: 80px;height: 60px;
+ object-fit: cover; margin-bottom: 15px" src="${img.src}" alt=""></div>`
+    }
+    function getfoot(title,img,event,tag) {
+
+        var foot = document.getElementById('foot')
+        var title = document.getElementById(title)
+        var img = document.getElementById(img)
+        var event = document.getElementById(event)
+        var tag = tag
+        foot.innerHTML = ''
+        foot.innerHTML+=`<div><div style="display: flex;"><h5 style="height: auto!important;">${tag} :&ensp;</h5><h5 style="height: auto!important;"> ${title.innerText}</h5></div><img style="width: 80px;height: 60px; object-fit: cover; margin-bottom: 15px" src="${img.src}" alt=""></div>`
+    }
+
+</script>
 </body>
 </html>
