@@ -32,7 +32,12 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
           integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
+    <style>
+        .error{
+            color: red;
+            font-size: 12px;
+        }
+    </style>
 </head>
 <body class="animsition">
 
@@ -69,7 +74,7 @@
                                     <a class="dropdown-item" href="packageWeddingService.html">Package Wedding Service</a>
                                     <a class="dropdown-item" href="birthdayParty.html">Birthday Party</a>
                                     <a class="dropdown-item" href="organizeSeminars.html">Organize Seminars,Conferences</a>
-                                    <a class="dropdown-item" href="exhibition.html">Other services</a>
+                                    <a class="dropdown-item" href="exhibition.html">Exhibition</a>
                                 </div>
                             </li>
 
@@ -177,6 +182,7 @@
             <div class="col-md-6 p-b-30">
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
                     <img src="images/birthday2.jpg" alt="IMG-OUR">
+                    
                 </div>
 
             </div>
@@ -195,66 +201,74 @@
             birthday memorable. we have affiliation with some hotels, it will make the service friendly and smooth </p>
         <div class="row">
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h5">SALA DANANG BEACH HOTEL</h5>
+                <h5 class="t-h5" id="dang_nang_hotel">SALA DANANG BEACH HOTEL</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img src="images/sala.jpg" alt="IMG-OUR">
+                    <img id="img_dang_nang_hotel" src="images/sala.jpg" alt="IMG-OUR">
+
                 </div>
                 <h6>Address:36 - 38 Lam Hoanh, Phuoc My, Da Nang, Vietnam, 550000</h6>
+                <input style="height: 20px;width: 20px" onclick="getdata('dang_nang_hotel','img_dang_nang_hotel',this,'PLACES')" type="radio" name="PLACES">
                 <h5 class="t-h51">Fee: $139 per night</h5>
+
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h5">Sea Corner Boutique Hotel</h5>
+                <h5 id="boutique_hotel" class="t-h5">Sea Corner Boutique Hotel</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img src="images/hotel.jpg" alt="IMG-OUR">
+                    <img id="img_boutique_hotel" src="images/hotel.jpg" alt="IMG-OUR">
                 </div>
                 <h6>-Address196 Tran Bach Dang Street, My An Ward, Ngu Hanh Son District, Da Nang City,
                     Viet Nam, Phuoc My, Da Nang, Vietnam, 550000</h6>
+                <input style="height: 20px;width: 20px" onclick="getdata('boutique_hotel','img_boutique_hotel',this,'PLACES')" type="radio" name="PLACES">
                 <h5 class="t-h51">Fee: $129 per night</h5>
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h5">InterContinental Hanoi Westlake</h5>
+                <h5 id="hanoi_westlake" class="t-h5">InterContinental Hanoi Westlake</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img src="images/hanoihotel.jpg" alt="IMG-OUR">
+                    <img id="img_hanoi_westlake" src="images/hanoihotel.jpg" alt="IMG-OUR">
                 </div>
                 <h6>
                     -Address: 5 Tu Hoa, Tay Ho District, Hanoi, Vietnam.
                 </h6>
+                <input style="height: 20px;width: 20px" onclick="getdata('hanoi_westlake','img_hanoi_westlake',this,'PLACES')" type="radio" name="PLACES">
                 <h5 class="t-h51">Fee: $119 per night</h5>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h5">Lotte Hotel Hanoi</h5>
+                <h5 id="lotte_Hotel" class="t-h5">Lotte Hotel Hanoi</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img src="images/lote.jpg" alt="IMG-OUR">
+                    <img  id="img_lotte_Hotel" src="images/lote.jpg" alt="IMG-OUR">
                 </div>
                 <h6>Address:No. 54 Lieu Giai Street,, Ba Dinh District, Hanoi, Vietnam, 10000</h6>
+                <input style="height: 20px;width: 20px" onclick="getdata('lotte_Hotel','img_lotte_Hotel',this,'PLACES')" type="radio" name="PLACES">
                 <h5 class="t-h51">Fee: $149 per night</h5>
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h5">Solaria Hanoi Hotel</h5>
+                <h5 id="solaria_hotel" class="t-h5">Solaria Hanoi Hotel</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img src="images/solaria.jpg" alt="IMG-OUR">
+                    <img id="img_solaria_hotel" src="images/solaria.jpg" alt="IMG-OUR">
                 </div>
                 <h6>-Address: 22 Pho Bao Khanh, Hoan Kiem District, Hanoi, Vietnam</h6>
+                <input style="height: 20px;width: 20px" onclick="getdata('solaria_hotel','img_solaria_hotel',this,'PLACES')" type="radio" name="PLACES">
                 <h5 class="t-h51">Fee: $129 per night</h5>
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h5">Hanoi La Siesta Diamond Hotel</h5>
+                <h5 id="diamond_hotel" class="t-h5">Hanoi La Siesta Diamond Hotel</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img src="images/hotel1.jpg" alt="IMG-OUR">
+                    <img id="img_diamond_hotel" src="images/hotel1.jpg" alt="IMG-OUR">
                 </div>
                 <h6>
                     -Address: 30 - 32 Lo Su street, Old Quarter, Hoan Kiem District, Hoan Kiem District, Hanoi, Vietnam.
                 </h6>
+                <input style="height: 20px;width: 20px" onclick="getdata('diamond_hotel','img_diamond_hotel',this,'PLACES')" type="radio" name="PLACES">
                 <h5 class="t-h51">Fee: $159 per night</h5>
 
             </div>
@@ -271,10 +285,11 @@
             service.</p>
         <div class="row">
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Set of Decorative Balloons</h5>
+                <h5 id="balloons" class="t-h54">Set of Decorative Balloons</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img src="images/bongbay.jpg" alt="IMG-OUR">
+                    <img id="img_balloons" src="images/bongbay.jpg" alt="IMG-OUR">
                 </div>
+                <input style="height: 20px;width: 20px;margin-top: 15px" onclick="getDESIGN('balloons','img_balloons',this,'Accessory')" type="radio" name="Design">
                 <h5 class="t-h52">Fee: $15 per set </h5>
 
 
@@ -284,14 +299,16 @@
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
                     <img src="images/bongbay1.jpg" alt="IMG-OUR">
                 </div>
+                <input style="height: 20px;width: 20px; margin-top: 15px" onclick="getDESIGN('balloons','img_balloons',this,'Accessory')" type="radio" name="Design">
                 <h5 class="t-h52">Fee: $35 per set</h5>
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Surprise Box</h5>
+                <h5 id="Surprise" class="t-h54">Surprise Box</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img src="images/box.jpg" alt="IMG-OUR">
+                    <img id="img_Surprise" src="images/box.jpg" alt="IMG-OUR">
                 </div>
+                <input style="height: 20px;width: 20px; margin-top: 15px" onclick="getDESIGN('Surprise','img_Surprise',this,'Accessory')" type="radio" name="Design">
 
                 <h5 class="t-h52">Fee: $29 per set</h5>
 
@@ -299,84 +316,93 @@
         </div>
         <div class="row">
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Glitter Black Birthday Hat</h5>
+                <h5 id="Glitter" class="t-h54">Glitter Black Birthday Hat</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img src="images/mu-sinh-nhat.jpg" alt="IMG-OUR">
+                    <img id="img_Glitter" src="images/mu-sinh-nhat.jpg" alt="IMG-OUR">
                 </div>
+                <input style="height: 20px;width: 20px; margin-top: 15px" onclick="getDESIGN('Glitter','img_Glitter',this,'Accessory')" type="radio" name="Design">
                 <h5 class="t-h52">Fee: $2 on pcs</h5>
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Glitter Black Birthday Gift Box</h5>
+                <h5 id="Gift_Box" class="t-h54">Glitter Black Birthday Gift Box</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img src="images/hop-qua.jpg" alt="IMG-OUR">
+                    <img id="img_Gift_Box" src="images/hop-qua.jpg" alt="IMG-OUR">
                 </div>
+                <input style="height: 20px;width: 20px; margin-top: 15px" onclick="getDESIGN('Gift_Box','img_Gift_Box',this,'Accessory')" type="radio" name="Design">
                 <h5 class="t-h52">Fee: $3 on pcs</h5>
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Glitter Black Birthday Frame</h5>
+                <h5 id="Frame" class="t-h54">Glitter Black Birthday Frame</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img src="images/khung-anh.jpg" alt="IMG-OUR">
+                    <img id="img_Frame" src="images/khung-anh.jpg" alt="IMG-OUR">
                 </div>
+                <input style="height: 20px;width: 20px; margin-top: 15px" onclick="getDESIGN('Frame','img_Frame',this,'Accessory')" type="radio" name="Design">
                 <h5 class="t-h52">Fee: $2 on pcs</h5>
 
             </div>
         </div>
         <div class="row">
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Full Set Royal Blue Pork</h5>
+                <h5 id="Royal" class="t-h54">Full Set Royal Blue Pork</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img src="images/full-set.jpg" alt="IMG-OUR">
+                    <img id="img_Royal" src="images/full-set.jpg" alt="IMG-OUR">
                 </div>
+                <input style="height: 20px;width: 20px; margin-top: 15px" onclick="getDESIGN('Royal','img_Royal',this,'Accessory')" type="radio" name="Design">
                 <h5 class="t-h52">Fee: $15 </h5>
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Full Set Blue Pig</h5>
+                <h5 id="Blue_Pig" class="t-h54">Full Set Blue Pig</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img src="images/full-set1.jpg" alt="IMG-OUR">
+                    <img   id="img_Blue_Pig" src="images/full-set1.jpg" alt="IMG-OUR">
                 </div>
+                <input style="height: 20px;width: 20px; margin-top: 15px" onclick="getDESIGN('Blue_Pig','img_Blue_Pig',this,'Accessory')" type="radio" name="Design">
                 <h5 class="t-h52">Fee: $15 </h5>
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Full Set Royal Yellow Pig</h5>
+                <h5 id="Royal_Yellow" class="t-h54">Full Set Royal Yellow Pig</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img src="images/full-set2.jpg" alt="IMG-OUR">
+                    <img   id="img_Royal_Yellow" src="images/full-set2.jpg" alt="IMG-OUR">
                 </div>
+                <input style="height: 20px;width: 20px; margin-top: 15px" onclick="getDESIGN('Royal_Yellow','img_Royal_Yellow',this,'Accessory')" type="radio" name="Design">
                 <h5 class="t-h52">Fee: $15</h5>
 
             </div>
         </div>
         <div class="row">
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Birthday Gate 1</h5>
+                <h5 id="Gate" class="t-h54">Birthday Gate 1</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img src="images/cong-chao.jpg" alt="IMG-OUR">
+                    <img id="img_Gate" src="images/cong-chao.jpg" alt="IMG-OUR">
                 </div>
+                <input style="height: 20px;width: 20px; margin-top: 15px" onclick="getDESIGN('Gate','img_Gate',this,'Accessory')" type="radio" name="Design">
                 <h5 class="t-h52">Fee: $25 </h5>
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Birthday Gate 2</h5>
+                <h5 id="gate2" class="t-h54">Birthday Gate 2</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img src="images/con-chao1.jpg" alt="IMG-OUR">
+                    <img  id="img_gate2" src="images/con-chao1.jpg" alt="IMG-OUR">
                 </div>
+                <input style="height: 20px;width: 20px; margin-top: 15px" onclick="getDESIGN('gate2','img_gate2',this,'Accessory')" type="radio" name="Design">
                 <h5 class="t-h52">Fee: $29 </h5>
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Birthday Gate 3</h5>
+                <h5 id="Gate3" class="t-h54">Birthday Gate 3</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img src="images/con-chao2.jpg" alt="IMG-OUR">
+                    <img id="img_Gate3" src="images/con-chao2.jpg" alt="IMG-OUR">
                 </div>
+                <input style="height: 20px;width: 20px; margin-top: 15px" onclick="getDESIGN('Gate3','img_gate3',this,'Accessory')" type="radio" name="Design">
                 <h5 class="t-h52">Fee: $19</h5>
 
             </div>
@@ -394,56 +420,63 @@
         </p>
         <div class="row">
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Custom Birthday Cake</h5>
+                <h5 id="birthday_cake" class="t-h54">Custom Birthday Cake</h5>
+
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img src="images/banh-sinh-nhat.jpg" alt="IMG-OUR">
+                    <img id="img_birthday_cake" src="images/banh-sinh-nhat.jpg" alt="IMG-OUR">
                 </div>
+                <input style="height: 20px;width: 20px; margin-top: 15px" onclick="getfoot('birthday_cake','img_birthday_cake',this,'FOOD')" type="radio" name="food">
                 <h5 class="t-h52">Fee: $15 </h5>
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Fast Food</h5>
+                <h5 id="Fast_Food" class="t-h54">Fast Food</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img src="images/fast-food.jpg" alt="IMG-OUR">
+                    <img  id="img_Fast_Food" src="images/fast-food.jpg" alt="IMG-OUR">
                 </div>
+                <input style="height: 20px;width: 20px; margin-top: 15px" onclick="getfoot('Fast_Food','img_Fast_Food',this,'FOOD')" type="radio" name="food">
                 <h5 class="t-h52">Fee: $19 per pack</h5>
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Fruit</h5>
+                <h5 id="Fruit" class="t-h54">Fruit</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img src="https://wallup.net/wp-content/uploads/2014/10/nature/Fruit_Salad.jpg" alt="IMG-OUR">
+                    <img id="img_Fruit" src="https://wallup.net/wp-content/uploads/2014/10/nature/Fruit_Salad.jpg" alt="IMG-OUR">
                 </div>
+                <input style="height: 20px;width: 20px; margin-top: 15px" onclick="getfoot('Fruit','img_Fruit',this,'FOOD')" type="radio" name="food">
                 <h5 class="t-h52">Fee: $29 per pack</h5>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Alcoholic Drinks</h5>
+                <h5 id="Alcoholic" class="t-h54">Alcoholic Drinks</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img src="http://nutshellschool.com/wp-content/uploads/2019/11/5-alcoholic-drinks.jpg"
+                    <img id="img_Alcoholic" src="http://nutshellschool.com/wp-content/uploads/2019/11/5-alcoholic-drinks.jpg"
                          alt="IMG-OUR">
                 </div>
+                <input style="height: 20px;width: 20px; margin-top: 15px" onclick="getdrink('Alcoholic','img_Alcoholic',this,'DRINKS')" type="radio" name="drink">
                 <h5 class="t-h52">Fee: $19 </h5>
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Cocktail</h5>
+                <h5 id="Cocktail" class="t-h54">Cocktail</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img src="images/cocktail.jpg" alt="IMG-OUR">
+                    <img id="img_Cocktail" src="images/cocktail.jpg" alt="IMG-OUR">
                 </div>
+                <input style="height: 20px;width: 20px; margin-top: 15px" onclick="getdrink('Cocktail','img_Cocktail',this,'DRINKS')" type="radio" name="drink">
                 <h5 class="t-h52">Fee: $12</h5>
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Soft Drinks</h5>
+                <h5 id="Soft" class="t-h54">Soft Drinks</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img src="images/nuoc-co-ga.jpg" alt="IMG-OUR">
+                    <img id="img_Soft" src="images/nuoc-co-ga.jpg" alt="IMG-OUR">
                 </div>
+                <input style="height: 20px;width: 20px; margin-top: 15px" onclick="getdrink('Soft','img_Soft',this,'DRINKS')" type="radio" name="drink">
                 <h5 class="t-h52">Fee: $20 per pack</h5>
 
             </div>
@@ -452,16 +485,6 @@
 </section>
 
 <div class="section-signup bg1-pattern  p-b-85 text-center">
-    <!-- Button trigger modal -->
-    <div class="row justify-content-center">
-        <div class="col-6">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                Choose Service
-            </button>
-        </div>
-    </div>
-
-
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -473,65 +496,17 @@
                     </button>
                 </div>
                 <div class="modal-body">
+
                     <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <table class="table table-bordered table-hover table-striped">
-                                    <thead>
-                                    <th>Stt</th>
-                                    <th>Tên</th>
-                                    <th>Giá</th>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Cocktail</td>
-                                        <td>12 $</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <h3 class="tit7 t-center p-b-62 p-t-105">
+                        <div id="from_check" style=";width: 100%; margin-bottom: 15px"></div>
+                        <div id="DESIGN" style=";width: 100%; margin-bottom: 15px"></div>
+                        <div id="foot" style=";width: 100%; margin-bottom: 15px"></div>
+                        <div id="drink" style=";width: 100%; margin-bottom: 15px"></div>
+
+
+                        <h3 class="tit7 t-center">
                             Send us a Message
                         </h3>
-<!--                        <form>-->
-<!--                            <div class="row mb-3">-->
-<!--                                <label for="inputText" class="col-sm-2 col-form-label">Name</label>-->
-<!--                                <div class="col-sm-10">-->
-<!--                                    <input type="text" class="form-control">-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="row mb-3">-->
-<!--                                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>-->
-<!--                                <div class="col-sm-10">-->
-<!--                                    <input type="email" class="form-control">-->
-<!--                                </div>-->
-<!--                            </div>-->
-
-<!--                            <div class="row mb-3">-->
-<!--                                <label for="inputPhone" class="col-sm-2 col-form-label">Phone</label>-->
-<!--                                <div class="col-sm-10">-->
-<!--                                    <input type="phone" class="form-control">-->
-<!--                                </div>-->
-<!--                            </div>-->
-
-<!--                            <div class="row mb-3">-->
-<!--                                <label for="inputMessage" class="col-sm-2 col-form-label">Message</label>-->
-<!--                                <div class="col-sm-10">-->
-<!--                                    <textarea class="form-control" style="height: 100px"></textarea>-->
-<!--                                </div>-->
-<!--                            </div>-->
-
-<!--                            <div class="row mb-3">-->
-<!--                                <div class="col-sm-12">-->
-<!--                                    <button type="submit" class="btn btn-primary">Submit</button>-->
-<!--                                </div>-->
-<!--                            </div>-->
-
-<!--                        </form>-->
                         <form class="wrap-form-reservation size22 m-l-r-auto" id="form">
                             <div class="row">
                                 <div class="col-md-4">
@@ -595,12 +570,11 @@
             </div>
         </div>
     </div>
-    <!--    <h2  style="text-align: center" class="t-h53">Choose Service</h2>-->
-    <!--    <form class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5">-->
-    <!--        <a href="choose_service.html" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Choose</a>-->
-    <!--    </form>-->
+        <h2  style="text-align: center" class="t-h53">Choose Service</h2>
+        <form class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5">
+            <buttom type="button" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10" data-toggle="modal" data-target="#exampleModal">Choose</buttom>
+        </form>
 </div>
-
 <!-- Footer -->
 <footer class="bg1">
     <div class="container p-t-40 p-b-70">
@@ -852,6 +826,48 @@
             },
         })
     })
+
+    function getdata(title,img,event,tag) {
+
+        var from_check = document.getElementById('from_check')
+        var title = document.getElementById(title)
+        var img = document.getElementById(img)
+        var event = document.getElementById(event)
+        var tag = tag
+        from_check.innerHTML = ''
+        from_check.innerHTML+=`<div><div style="display: flex;"><h5 style="height: auto!important;">${tag} :&ensp;</h5><h5 style="height: auto!important;"> ${title.innerText}</h5></div><img style="width: 80px;height: 60px; object-fit: cover; margin-bottom: 15px" src="${img.src}" alt=""></div>`
+    }
+    function getDESIGN(title,img,event,tag) {
+
+        var DESIGN = document.getElementById('DESIGN')
+        var title = document.getElementById(title)
+        var img = document.getElementById(img)
+        var event = document.getElementById(event)
+        var tag = tag
+        DESIGN.innerHTML = ''
+        DESIGN.innerHTML+=`<div><div style="display: flex;"><h5 style="height: auto!important;">${tag} :&ensp;</h5><h5 style="height: auto!important;"> ${title.innerText}</h5></div><img style="width: 80px;height: 60px; object-fit: cover; margin-bottom: 15px" src="${img.src}" alt=""></div>`
+    }
+    function getdrink(title,img,event,tag) {
+
+        var drink = document.getElementById('drink')
+        var title = document.getElementById(title)
+        var img = document.getElementById(img)
+        var event = document.getElementById(event)
+        var tag = tag
+        drink.innerHTML = ''
+        drink.innerHTML+=`<div><div style="display: flex;"><h5 style="height: auto!important;">${tag} :&ensp;</h5><h5 style="height: auto!important;"> ${title.innerText}</h5></div><img style="width: 80px;height: 60px; object-fit: cover; margin-bottom: 15px" src="${img.src}" alt=""></div>`
+    }
+    function getfoot(title,img,event,tag) {
+
+        var foot = document.getElementById('foot')
+        var title = document.getElementById(title)
+        var img = document.getElementById(img)
+        var event = document.getElementById(event)
+        var tag = tag
+        foot.innerHTML = ''
+        foot.innerHTML+=`<div><div style="display: flex;"><h5 style="height: auto!important;">${tag} :&ensp;</h5><h5 style="height: auto!important;"> ${title.innerText}</h5></div><img style="width: 80px;height: 60px; object-fit: cover; margin-bottom: 15px" src="${img.src}" alt=""></div>`
+    }
+
 </script>
 </body>
 </html>
