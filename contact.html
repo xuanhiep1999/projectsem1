@@ -38,6 +38,10 @@
             width: 87%;
             /* The width is the width of the web page */
         }
+        .error{
+            color: red;
+            font-size: 12px;
+        }
     </style>
     <script>
         // Initialize and add the map
@@ -56,6 +60,7 @@
             });
         }
     </script>
+
 </head>
 <body class="animsition">
 
@@ -106,9 +111,9 @@
                                 <a href="about.html">About</a>
                             </li>
 
-<!--                            <li>-->
-<!--                                <a href="blog.html">Blog</a>-->
-<!--                            </li>-->
+                            <!--                            <li>-->
+                            <!--                                <a href="blog.html">Blog</a>-->
+                            <!--                            </li>-->
 
                             <li>
                                 <a href="contact.html">Contact</a>
@@ -145,7 +150,7 @@
             Send us a Message
         </h3>
 
-        <form class="wrap-form-reservation size22 m-l-r-auto">
+        <form id="form" class="wrap-form-reservation size22 m-l-r-auto">
             <div class="row">
                 <div class="col-md-4">
                     <!-- Name -->
@@ -465,9 +470,41 @@
 <script type="text/javascript" src="public/lightbox2/js/lightbox.min.js"></script>
 <!--===============================================================================================-->
 <script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
 <script
         src="https://maps.googleapis.com/maps/api/js?&callback=initMap&libraries=&v=weekly"
         async
 ></script>
+<script>
+    $(function () {
+        $('#form').validate({
+            rules: {
+                email: {
+                    required: true,
+                },
+                name: {
+                    required: true,
+                },
+                phone: {
+                    required: true,
+                },
+            },
+            messages: {
+                email: {
+                    required: 'Please Enter Email',
+                    maxlength: 'Email name is limited to 255 characters',
+                    email: 'Please enter true email'
+                },
+                name: {
+                    required: 'Please Enter Name',
+                },
+                phone: {
+                    required: 'Please Enter Phone',
+                },
+            },
+        })
+    })
+</script>
 </body>
 </html>
