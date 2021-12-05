@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Wedding Service</title>
+    <title>Wedding</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
@@ -30,6 +30,15 @@
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!--===============================================================================================-->
+    <style>
+        .error{
+            color: red;
+            font-size: 12px;
+        }
+    </style>
 </head>
 <body class="animsition">
 
@@ -68,15 +77,6 @@
                                     <a class="dropdown-item" href="organizeSeminars.html">Organize Seminars,Conferences</a>
                                     <a class="dropdown-item" href="exhibition.html">Exhibition</a>
                                 </div>
-<!--                                <div class="dropdown-menu">-->
-<!--                                    <a class="dropdown-item" href="outdoorService.html">Outdoor Service</a>-->
-<!--                                    <a class="dropdown-item" href="packageWeddingService.html">Package Wedding Service</a>-->
-<!--                                    <a class="dropdown-item" href="birthdayParty.html">Birthday Party</a>-->
-<!--                                    <a class="dropdown-item" href="#">Exhibiton</a>-->
-<!--                                    <a class="dropdown-item" href="organizeSeminars.html">Conference</a>-->
-<!--                                    &lt;!&ndash;                                    <div class="dropdown-divider"></div>&ndash;&gt;-->
-<!--                                    &lt;!&ndash;                                    <a class="dropdown-item" href="#">Other services</a>&ndash;&gt;-->
-<!--                                </div>-->
                             </li>
 
                             <li>
@@ -86,11 +86,6 @@
                             <li>
                                 <a href="about.html">About</a>
                             </li>
-
-                            <!--                            <li>-->
-                            <!--                                <a href="blog.html">Blog</a>-->
-                            <!--                            </li>-->
-
                             <li>
                                 <a href="contact.html">Contact</a>
                             </li>
@@ -215,66 +210,72 @@
         <p class="t-center m-b-22 size3 m-l-r-auto">
             If you are a lover of simplicity, close to nature and always dream of having your wedding decorated with flowers and cute handmade items, the following article will suggest you a few places. organize a rustic but romantic rustic wedding party.        <div class="row">
         <div class="col-md-4 p-b-30">
-            <h5 class="t-h54">Maison De Charme</h5>
+            <h5 id="Maison" class="t-h54">Maison De Charme</h5>
             <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                <img class="img" src="images/dia-diem-cuoi.jpg" alt="IMG-OUR">
+                <img id="img_Maison" class="img" src="images/dia-diem-cuoi.jpg" alt="IMG-OUR">
             </div>
             <h6 >Address: 793/57/3 Tran Xuan Soan, Tan Hung, District 7, Ho Chi Minh city</h6>
+            <input style="height: 30px;width: 30px" onclick="getdata('Maison','img_Maison',this,'PLACES')" type="radio" name="PLACES">
             <h5 class="t-h51">Fee: $149 Per Day</h5>
 
 
         </div>
         <div class="col-md-4 p-b-30">
-            <h5 class="t-h54">Chloe Gallery</h5>
+            <h5 id="Gallery" class="t-h54">Chloe Gallery</h5>
             <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                <img class="img" src="images/dia-diem-cuoi1.jpg" alt="IMG-OUR">
+                <img id="img_Gallery" class="img" src="images/dia-diem-cuoi1.jpg" alt="IMG-OUR">
             </div>
             <h6>Address: 06 Phan Van Chuong, Ban Nguyet Lake, Phu My Hung, District 7, Ho Chi Minh City</h6>
+            <input style="height: 30px;width: 30px" onclick="getdata('Gallery','img_Gallery',this,'PLACES')" type="radio" name="PLACES">
             <h5 class="t-h51">Fee: $159 Per Day</h5>
 
 
         </div>
         <div class="col-md-4 p-b-30">
-            <h5 class="t-h54">Lan Anh Village (LA Garden)</h5>
+            <h5 id="lananh" class="t-h54">Lan Anh Village (LA Garden)</h5>
             <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                <img class="img" src="images/dia-diem-cuoi2.jpg" alt="IMG-OUR">
+                <img id="img_lananh" class="img" src="images/dia-diem-cuoi2.jpg" alt="IMG-OUR">
             </div>
             <h6 >
                 Address: No. 2, Street No. 45, Binh An Ward, District 2, Ho Chi Minh City
             </h6>
+            <input style="height: 30px;width: 30px" onclick="getdata('lananh','img_lananh',this,'PLACES')" type="radio" name="PLACES">
             <h5 class="t-h51">Fee: $139 Per Day</h5>
         </div>
     </div>
         <div class="row">
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Van Hoa Wedding Center</h5>
+                <h5 id="vanhoa" class="t-h54">Van Hoa Wedding Center</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img class="img" src="images/dia-diem-cuoi3.jpg" alt="IMG-OUR">
+                    <img id="img_vanhoa" class="img" src="images/dia-diem-cuoi3.jpg" alt="IMG-OUR">
                 </div>
                 <h6 >Address:No. 2 Chuong Duong Do, Hoan Kiem District, Hanoi</h6>
+                <input style="height: 30px;width: 30px" onclick="getdata('vanhoa','img_vanhoa',this,'PLACES')" type="radio" name="PLACES">
                 <h5 class="t-h51">Fee: $169 Per Day</h5>
 
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Wedding & Event Center </h5>
+                <h5 id="Wedding" class="t-h54">Wedding & Event Center </h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img class="img" src="images/dia-diem-cuoi4.jpg" alt="IMG-OUR">
+                    <img id="img_Wedding" class="img" src="images/dia-diem-cuoi4.jpg" alt="IMG-OUR">
                 </div>
                 <h6>Address: Dong Palace Drum System, Hanoi</h6>
+                <input style="height: 30px;width: 30px" onclick="getdata('Wedding','img_Wedding',this,'PLACES')" type="radio" name="PLACES">
                 <h5 class="t-h51">Fee: $199 Per Day</h5>
 
 
             </div>
             <div class="col-md-4 p-b-30">
-                <h5 class="t-h54">Season Wedding Center</h5>
+                <h5 id="Season" class="t-h54">Season Wedding Center</h5>
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                    <img class="img" src="images/dia-diem-cuoi5.jpg" alt="IMG-OUR">
+                    <img id="img_Season" class="img" src="images/dia-diem-cuoi5.jpg" alt="IMG-OUR">
                 </div>
                 <h6 >
                     Address: 9 Dao Duy Anh, Dong Da, Hanoi.
                 </h6>
+                <input style="height: 30px;width: 30px" onclick="getdata('Season','img_Season',this,'PLACES')" type="radio" name="PLACES">
                 <h5 class="t-h51">Fee: $159 per night</h5>
 
             </div>
@@ -293,6 +294,7 @@
             <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
                 <img class="img" src="images/backrop.jpg" alt="IMG-OUR">
             </div>
+            <input class="checkbox full" name="box" title ="You have Chosen" style="height: 30px;width: 30px; margin-top: 15px" type="checkbox" value="images/backrop.jpg" slot="Photography Backdrop">
             <h5 class="t-h52">Fee: $99 per set </h5>
 
         </div>
@@ -301,6 +303,7 @@
             <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
                 <img class="img" src="images/sign-table.jpg" alt="IMG-OUR">
             </div>
+            <input class="checkbox full" name="box" title ="You have Chosen" style="height: 30px;width: 30px; margin-top: 15px" type="checkbox" value="images/sign-table.jpg" slot="Sign Gallery Table">
             <h5 class="t-h52">Fee: $199 per set</h5>
 
         </div>
@@ -309,6 +312,7 @@
             <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
                 <img class="img" src="images/way.jpg" alt="IMG-OUR">
             </div>
+            <input class="checkbox full" name="box" title ="You have Chosen" style="height: 30px;width: 30px; margin-top: 15px" type="checkbox" value="images/way.jpg" slot="Stage Aisle">
 
             <h5 class="t-h52">Fee: $29 per set</h5>
 
@@ -320,6 +324,7 @@
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
                     <img class="img" src="images/gate.jpg" alt="IMG-OUR">
                 </div>
+                <input class="checkbox full" name="box" title ="You have Chosen" style="height: 30px;width: 30px; margin-top: 15px" type="checkbox" value="images/gate.jpg" slot="Wedding flower gate">
                 <h5 class="t-h52">Fee: $99 </h5>
 
 
@@ -329,6 +334,7 @@
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
                     <img class="img" src="images/bang-ten.jpg" alt="IMG-OUR">
                 </div>
+                <input class="checkbox full" name="box" title ="You have Chosen" style="height: 30px;width: 30px; margin-top: 15px" type="checkbox" value="images/bang-ten.jpg" slot="Cut Out Nameplate Letters">
                 <h5 class="t-h52">Fee: $19 </h5>
 
 
@@ -338,6 +344,7 @@
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
                     <img class="img" src="images/hoa-cuoi.jpg" alt="IMG-OUR">
                 </div>
+                <input class="checkbox full" name="box" title ="You have Chosen" style="height: 30px;width: 30px; margin-top: 15px" type="checkbox" value="images/hoa-cuoi.jpg" slot="Bride's wedding flowers">
                 <h5 class="t-h52">Fee: $29 on pcs</h5>
 
             </div>
@@ -348,6 +355,7 @@
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
                     <img class="img" src="images/ban-ghe.jpg" alt="IMG-OUR">
                 </div>
+                <input class="checkbox full" name="box" title ="You have Chosen" style="height: 30px;width: 30px; margin-top: 15px" type="checkbox" value="images/ban-ghe.jpg" slot="Tables and chairs">
                 <h5 class="t-h52">Fee: $39 </h5>
 
 
@@ -357,6 +365,7 @@
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
                     <img class="img" src="images/thue-xe.jpg" alt="IMG-OUR">
                 </div>
+                <input class="checkbox full" name="box" title ="You have Chosen" style="height: 30px;width: 30px; margin-top: 15px" type="checkbox" value="images/thue-xe.jpg" slot="Wedding car rental">
                 <h5 class="t-h52">Fee: $199 </h5>
 
 
@@ -366,6 +375,7 @@
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
                     <img class="img" src="images/full-set-cuoi.jpg" alt="IMG-OUR">
                 </div>
+                <input id="full" class="checkbox" name="box" title ="You have Chosen" style="height: 30px;width: 30px; margin-top: 15px" type="checkbox" value="images/full-set-cuoi.jpg" slot="Full Set">
                 <h5 class="t-h52">Fee: $1999</h5>
 
             </div>
@@ -385,6 +395,8 @@
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
                     <img class="img" src="http://blog.weddingguide.co.za/wp-content/uploads/2019/08/MasterofCeremomies-Andy.jpeg" alt="IMG-OUR">
                 </div>
+                <input class="checkbox" name="box" title ="You have Chosen" style="height: 30px;width: 30px; margin-top: 15px" type="checkbox"
+                       value="http://blog.weddingguide.co.za/wp-content/uploads/2019/08/MasterofCeremomies-Andy.jpeg" slot="MC Wedding">
                 <h5 class="t-h52">Fee: Contact </h5>
 
 
@@ -394,6 +406,7 @@
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
                     <img class="img" src="images/trang-diem.jpg "alt="IMG-OUR">
                 </div>
+                <input class="checkbox" name="box" title ="You have Chosen" style="height: 30px;width: 30px; margin-top: 15px" type="checkbox" value="images/trang-diem.jpg" slot="Make-up artist">
                 <h5 class="t-h52">Fee: $99 </h5>
 
 
@@ -403,6 +416,7 @@
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
                     <img class="img" src="images/quay-phim.jpg" alt="IMG-OUR">
                 </div>
+                <input class="checkbox" name="box" title ="You have Chosen" style="height: 30px;width: 30px; margin-top: 15px" type="checkbox" value="images/quay-phim.jpg" slot="Filming & Photography">
                 <h5 class="t-h52">Fee: $59 </h5>
             </div>
         </div>
@@ -412,6 +426,7 @@
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
                     <img class="img" src="images/sound-light.jpg" alt="IMG-OUR">
                 </div>
+                <input class="checkbox" name="box" title ="You have Chosen" style="height: 30px;width: 30px; margin-top: 15px" type="checkbox" value="images/sound-light.jpg" slot="Sound & Light">
                 <h5 class="t-h52">Fee: $299 </h5>
 
 
@@ -422,6 +437,7 @@
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
                     <img class="img" src="images/band.jpg" alt="IMG-OUR">
                 </div>
+                <input class="checkbox" name="box" title ="You have Chosen" style="height: 30px;width: 30px; margin-top: 15px" type="checkbox" value="images/band.jpg" slot="Entertainment Band">
                 <h5 class="t-h52">Fee: $139</h5>
 
 
@@ -431,6 +447,8 @@
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
                     <img class="img" src="http://blog.renaissanceplace.com/wp-content/uploads/2016/02/wait-staff.jpg" alt="IMG-OUR">
                 </div>
+                <input class="checkbox" name="box" title ="You have Chosen" style="height: 30px;width: 30px; margin-top: 15px" type="checkbox"
+                       value="http://blog.renaissanceplace.com/wp-content/uploads/2016/02/wait-staff.jpg" slot="Staff">
                 <h5 class="t-h52">Fee: $199 per pack</h5>
 
             </div>
@@ -452,6 +470,7 @@
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
                     <img class="img" src="images/food-drinks.jpg" alt="IMG-OUR">
                 </div>
+                <input class="checkbox" name="box" title ="You have Chosen" style="height: 30px;width: 30px; margin-top: 15px" type="checkbox" value="images/food-drinks.jpg" slot="Buffets-Cold-Ashridge">
                 <h5 class="t-h52">Fee: $29 </h5>
 
 
@@ -461,6 +480,7 @@
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
                     <img class="img" src="images/wine.jpg" alt="IMG-OUR">
                 </div>
+                <input class="checkbox" name="box" title ="You have Chosen" style="height: 30px;width: 30px; margin-top: 15px" type="checkbox" value="images/wine.jpg" slot="Wine">
                 <h5 class="t-h52">Fee: $59 Per Bottle</h5>
 
 
@@ -470,6 +490,8 @@
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
                     <img class="img" src="https://wallup.net/wp-content/uploads/2014/10/nature/Fruit_Salad.jpg" alt="IMG-OUR">
                 </div>
+                <input class="checkbox" name="box" title ="You have Chosen" style="height: 30px;width: 30px; margin-top: 15px" type="checkbox"
+                       value="https://wallup.net/wp-content/uploads/2014/10/nature/Fruit_Salad.jpg" slot="Fruit">
                 <h5 class="t-h52">Fee: $29 per pack</h5>
             </div>
         </div>
@@ -479,6 +501,7 @@
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
                     <img class="img" src="images/food-drinks1.jpg" alt="IMG-OUR">
                 </div>
+                <input class="checkbox" name="box" title ="You have Chosen" style="height: 30px;width: 30px; margin-top: 15px" type="checkbox" value="images/food-drinks1.jpg" slot="Cakes">
                 <h5 class="t-h52">Fee: $99 </h5>
 
 
@@ -489,6 +512,7 @@
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
                     <img class="img" src="images/cocktail.jpg" alt="IMG-OUR">
                 </div>
+                <input class="checkbox" name="box" title ="You have Chosen" style="height: 30px;width: 30px; margin-top: 15px" type="checkbox" value="images/cocktail.jpg" slot="Cocktail">
                 <h5 class="t-h52">Fee: $12</h5>
 
 
@@ -498,6 +522,7 @@
                 <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
                     <img class="img" src="images/nuoc-co-ga.jpg" alt="IMG-OUR">
                 </div>
+                <input class="checkbox" name="box" title ="You have Chosen" style="height: 30px;width: 30px; margin-top: 15px" type="checkbox" value="images/nuoc-co-ga.jpg" slot="Soft Drinks">
                 <h5 class="t-h52">Fee: $20 per pack</h5>
 
             </div>
@@ -505,23 +530,7 @@
     </div>
 </section>
 
-<!--<div class="section-signup bg1-pattern p-t-85 p-b-85">-->
-<!--    <h2 class="t-h53">Choose Service</h2>-->
-<!--    <form class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5">-->
-<!--        <a href="choose_service.html" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Choose</a>-->
-<!--    </form>-->
-<!--</div>-->
 <div class="section-signup bg1-pattern  p-b-85 text-center">
-    <!-- Button trigger modal -->
-    <div class="row justify-content-center">
-        <div class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5">
-            <button type="button" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10 " data-toggle="modal" data-target="#exampleModal">
-                Choose Service
-            </button>
-        </div>
-    </div>
-
-
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -533,11 +542,20 @@
                     </button>
                 </div>
                 <div class="modal-body">
+
                     <div class="container">
-                        <h3 class="tit7 t-center p-b-62 p-t-105">
+                        <div id="from_check" style=";width: 100%; margin-bottom: 15px"></div>
+                        <div id="checkbox" style=";width: 100%; margin-bottom: 15px"></div>
+
+<!--                        <div id="DESIGN" style=";width: 100%; margin-bottom: 15px"></div>-->
+<!--                        <div id="foot" style=";width: 100%; margin-bottom: 15px"></div>-->
+<!--                        <div id="drink" style=";width: 100%; margin-bottom: 15px"></div>-->
+
+
+
+                        <h3 class="tit7 t-center">
                             Send us a Message
                         </h3>
-
                         <form class="wrap-form-reservation size22 m-l-r-auto" id="form">
                             <div class="row">
                                 <div class="col-md-4">
@@ -601,10 +619,11 @@
             </div>
         </div>
     </div>
-    <!--    <h2  style="text-align: center" class="t-h53">Choose Service</h2>-->
-    <!--    <form class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5">-->
-    <!--        <a href="choose_service.html" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">Choose</a>-->
-    <!--    </form>-->
+    <h2  style="text-align: center" class="t-h53">Choose Service</h2>
+    <form class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5">
+        <buttom onclick="getlist()" type="button" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10" data-toggle="modal" data-target="#exampleModal">Choose</buttom>
+
+    </form>
 </div>
 <!-- Footer -->
 <footer class="bg1">
@@ -789,7 +808,7 @@
 
 <!--===============================================================================================-->
 <script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
 <script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->
 <script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
@@ -814,5 +833,103 @@
 <!--===============================================================================================-->
 <script src="js/main.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+<script>
+    $(function () {
+        $('#form').validate({
+            rules: {
+                email: {
+                    required: true,
+                },
+                name: {
+                    required: true,
+                },
+                phone: {
+                    required: true,
+                },
+            },
+            messages: {
+                email: {
+                    required: 'Please Enter Email',
+                    maxlength: 'Email name is limited to 255 characters',
+                    email: 'Please enter true email'
+                },
+                name: {
+                    required: 'Please Enter Name',
+                },
+                phone: {
+                    required: 'Please Enter Phone',
+                },
+            },
+        })
+    })
+
+    function getdata(title,img,event,tag) {
+
+        var from_check = document.getElementById('from_check')
+        var title = document.getElementById(title)
+        var img = document.getElementById(img)
+        var event = document.getElementById(event)
+        var tag = tag
+        from_check.innerHTML = ''
+        from_check.innerHTML+=`<div><div style="display: flex;"><h5 style="height: auto!important;">${tag}
+ :&ensp;</h5><h5 style="height: auto!important;"> ${title.innerText}</h5></div><img style="width: 80px;height: 60px;
+ object-fit: cover; margin-bottom: 15px" src="${img.src}" alt=""></div>`
+    }
+
+    function getlist() {
+        var list=document.querySelectorAll('input[type=checkbox]:checked')
+        var checkbox = document.getElementById('checkbox')
+        checkbox.innerHTML=''
+        for (let i = 0; i < list.length; i++) {
+            checkbox.innerHTML+=`<div><div style="display: flex;"><h5 style="height: auto!important;">${list[i].title} :&ensp;</h5><h5 style="height: auto!important;"> ${list[i].slot}</h5></div><img style="width: 80px;height: 60px; object-fit: cover; margin-bottom: 15px" src="${list[i].value}" alt=""></div>`
+
+
+        }
+    }
+    $('#full').click(function (){
+        if($('#full').is(':checked')) {
+            $('.full').prop('checked',true)
+        }else {
+            $('.full').prop('checked',false)
+        }
+    })
+
+//     function getDESIGN(title,img,event,tag) {
+//
+//         var DESIGN = document.getElementById('DESIGN')
+//         var title = document.getElementById(title)
+//         var img = document.getElementById(img)
+//         var event = document.getElementById(event)
+//         var tag = tag
+//         DESIGN.innerHTML = ''
+//         DESIGN.innerHTML+=`<div><div style="display: flex;"><h5 style="height: auto!important;">${tag} :&ensp;</h5><h5 style="height: auto!important;"> ${title.innerText}</h5></div><img style="width: 80px;height: 60px; object-fit: cover; margin-bottom: 15px" src="${img.src}" alt=""></div>`
+//     }
+//     function getdrink(title,img,event,tag) {
+//
+//
+//         var drink = document.getElementById('drink')
+//         var title = document.getElementById(title)
+//         var img = document.getElementById(img)
+//         var event = document.getElementById(event)
+//         var tag = tag
+//         drink.innerHTML = ''
+//         drink.innerHTML+=`<div><div style="display: flex;"><h5 style="height: auto!important;">${tag}
+// :&ensp;</h5><h5 style="height: auto!important;"> ${title.innerText}</h5></div><img style="width: 80px;height: 60px;
+//  object-fit: cover; margin-bottom: 15px" src="${img.src}" alt=""></div>`
+//     }
+//     function getfoot(title,img,event,tag) {
+//
+//         var foot = document.getElementById('foot')
+//         var title = document.getElementById(title)
+//         var img = document.getElementById(img)
+//         var event = document.getElementById(event)
+//         var tag = tag
+//         foot.innerHTML = ''
+//         foot.innerHTML+=`<div><div style="display: flex;"><h5 style="height: auto!important;">${tag} :&ensp;</h5><h5 style="height: auto!important;"> ${title.innerText}</h5></div><img style="width: 80px;height: 60px; object-fit: cover; margin-bottom: 15px" src="${img.src}" alt=""></div>`
+//     }
+
+</script>
 </body>
 </html>
