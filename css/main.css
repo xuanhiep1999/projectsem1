@@ -1690,3 +1690,7 @@ body {padding-right: 0px !important;}
 /*  font-family: Sans-serif;*/
 /*  color: #0c5460;*/
 /*}*/
+
+.h-5 {
+  height: 50px!important;
+}
