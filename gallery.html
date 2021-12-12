@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Gallery</title>
     <meta charset="UTF-8">
@@ -28,625 +29,695 @@
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <!--===============================================================================================-->
     <style>
-        .error{
+        .error {
             color: red;
             font-size: 12px;
         }
     </style>
 </head>
+
 <body class="animsition">
 
-<!-- Header -->
-<header>
-    <!-- Header desktop -->
-    <div class="wrap-menu-header gradient1 trans-0-4">
-        <div class="container h-full">
-            <div class="wrap_header trans-0-3">
-                <!-- Logo -->
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo.png" alt="IMG-LOGO" data-logofixed="images/logo.png">
-                    </a>
+    <!-- Header -->
+    <header>
+        <!-- Header desktop -->
+        <div class="wrap-menu-header gradient1 trans-0-4">
+            <div class="container h-full">
+                <div class="wrap_header trans-0-3">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="IMG-LOGO" data-logofixed="images/logo.png">
+                        </a>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="wrap_menu p-l-45 p-l-0-xl">
+                        <nav class="menu">
+                            <ul class="main_menu">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+
+                                <li>
+                                    <a href="event.html">Event</a>
+                                </li>
+
+                                <li class="nav-item dropdown dropdown-slide">
+                                    <a class="nav-link" href="outdoorService.html" data-toggle="dropdown">Service</a>
+                                    <!-- Dropdown list -->
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="outdoorService.html">Outdoor Service</a>
+                                        <a class="dropdown-item" href="packageWeddingService.html">Package Wedding
+                                            Service</a>
+                                        <a class="dropdown-item" href="birthdayParty.html">Birthday Party</a>
+                                        <a class="dropdown-item" href="organizeSeminars.html">Organize
+                                            Seminars,Conferences</a>
+                                        <a class="dropdown-item" href="exhibition.html">Exhibition</a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="gallery.html">Gallery</a>
+                                </li>
+
+                                <li>
+                                    <a href="about.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- Social -->
+                    <div class="social flex-w flex-l-m p-r-20">
+                        <a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Title Page -->
+    <section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(images/DX7814-1.jpg);">
+        <h2 class="tit6 t-center">
+            Gallery
+        </h2>
+    </section>
+
+    <div class="section-gallery p-t-118 p-b-100">
+        <div class="wrap-label-gallery filter-tope-group size27 flex-w flex-sb-m m-l-r-auto flex-col-c-sm p-l-15 p-r-15 m-b-60">
+            <button class="label-gallery txt26 trans-0-4 is-actived" data-filter="all">
+                All Photo
+            </button>
+            <!-- wedding, -->
+            <button class="label-gallery txt26 trans-0-4 " data-filter="wedding">
+                Wedding
+            </button>
+
+            <button class="label-gallery txt26 trans-0-4" data-filter="birthday">
+                Birthday
+            </button>
+
+            <button class="label-gallery txt26 trans-0-4" data-filter="outdoor">
+                Outdoor
+            </button>
+
+            <button class="label-gallery txt26 trans-0-4" data-filter="Conferences">
+                conference
+            </button>
+            <button class="label-gallery txt26 trans-0-4" data-filter="drink">
+                drinks
+            </button>
+
+        </div>
+
+        <div class="wrap-gallery isotope-grid flex-w p-l-25 p-r-25">
+            <!-- wedding -->
+
+            <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="wedding">
+                <img class="img2" src="images/lo-trinh-nhung-viec-can-lam-de-dam-cuoi-duoc-tron-ven-nhat-12.jpg" alt="IMG-GALLERY">
+
+                <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                    <a class="btn-show-gallery flex-c-m fa fa-search" href="images/lo-trinh-nhung-viec-can-lam-de-dam-cuoi-duoc-tron-ven-nhat-12.jpg" data-lightbox="gallery"></a>
+                </div>
+            </div>
+            <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="wedding">
+                <img class="img2" src="images/dia-diem-cuoi4.jpg" alt="IMG-GALLERY">
+
+                <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                    <a class="btn-show-gallery flex-c-m fa fa-search" href="images/dia-diem-cuoi4.jpg" data-lightbox="gallery"></a>
+                </div>
+            </div>
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="wedding">
+                <img class=" img2 " src=" images/wedding1.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/wedding1.jpg " data-lightbox="
+                        gallery "></a>
+                </div>
+            </div>
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="wedding">
+                <img class=" img2 " src=" images/wedding.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/wedding.jpg " data-lightbox=" gallery "></a>
+                </div>
+            </div>
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="wedding">
+                <img class=" img2 " src=" images/wedding2.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/wedding2.jpg " data-lightbox="
+                        gallery "></a>
+                </div>
+            </div>
+
+            <!-- birthday -->
+            <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="birthday">
+                <img class="img2" src="images/cake.jpg" alt="IMG-GALLERY">
+
+                <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                    <a class="btn-show-gallery flex-c-m fa fa-search" href="images/cake.jpg" data-lightbox="gallery"></a>
+                </div>
+            </div>
+
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="birthday">
+                <img class=" img2 " src=" images/birthday.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/birthday.jpg " data-lightbox="
+                        gallery "></a>
+                </div>
+            </div>
+
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="birthday">
+                <img class=" img2 " src=" images/bi.webp " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/bi.webp " data-lightbox=" gallery "></a>
+                </div>
+            </div>
+
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="birthday">
+                <img class=" img2 " src=" images/banh-sinh-nhat.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/banh-sinh-nhat.jpg " data-lightbox="
+                        gallery "></a>
+                </div>
+            </div>
+
+            <!--  Conference -->
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="Conferences">
+                <img class=" img2 " src=" images/hoi-thao.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/hoi-thao.jpg " data-lightbox="
+                        gallery "></a>
+                </div>
+            </div>
+
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="Conferences">
+                <img class=" img2 " src=" images/hoi-thao1.png " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/hoi-thao1.png " data-lightbox="
+                        gallery "></a>
+                </div>
+            </div>
+
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="Conferences">
+                <img class=" img2 " src=" images/hoi-thao2.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/hoi-thao2.jpg " data-lightbox="
+                        gallery "></a>
+                </div>
+            </div>
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="Conferences">
+                <img class=" img2 " src=" images/trien-lam.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/trien-lam.jpg " data-lightbox="
+                        gallery "></a>
+                </div>
+            </div>
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="Conferences">
+                <img class=" img2 " src=" images/trien-lam1.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/trien-lam1.jpg " data-lightbox="
+                        gallery "></a>
+                </div>
+            </div>
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="Conferences">
+                <img class=" img2 " src=" images/trien-lam2.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/trien-lam2.jpg " data-lightbox="
+                        gallery "></a>
+                </div>
+            </div>
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="Conferences">
+                <img class=" img2 " src=" images/trung-tam-hoi-cho-trien-lam-da-nang.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href="
+                        images/trung-tam-hoi-cho-trien-lam-da-nang.jpg " data-lightbox=" gallery "></a>
+                </div>
+            </div>
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="Conferences">
+                <img class=" img2 " src=" images/trung-tam-hoi-nghi-quoc-gia.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href="
+                        images/trung-tam-hoi-nghi-quoc-gia.jpg " data-lightbox=" gallery "></a>
+                </div>
+            </div>
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="Conferences">
+                <img class=" img2 " src=" images/trung-tam-hoi-cho-và-trien-lam-sai-gon-secc-1.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href="
+                        images/trung-tam-hoi-cho-và-trien-lam-sai-gon-secc-1.jpg " data-lightbox=" gallery "></a>
+                </div>
+            </div>
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="Conferences">
+                <img class=" img2 " src=" images/trang-tri-san-khau.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href="
+                        images/trang-tri-san-khau.jpg " data-lightbox=" gallery "></a>
+                </div>
+            </div>
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="Conferences">
+                <img class=" img2 " src=" images/sound-light.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/sound-light.jpg " data-lightbox="
+                        gallery "></a>
+                </div>
+            </div>
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="Conferences">
+                <img class=" img2 " src=" images/sound-light2.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/sound-light2.jpg " data-lightbox="
+                        gallery "></a>
+                </div>
+            </div>
+
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="Conferences">
+                <img class=" img2 " src=" images/way.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/way.jpg " data-lightbox=" gallery "></a>
+                </div>
+            </div>
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="Conferences">
+                <img class=" img2 " src=" images/red-carpet.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/red-carpet.jpg " data-lightbox="
+                        gallery "></a>
+                </div>
+            </div>
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="Conferences">
+                <img class=" img2 " src=" images/hallway.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/hallway.jpg " data-lightbox=" gallery "></a>
+                </div>
+            </div>
+
+            <!-- outdoor -->
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom outdoor" data-item="outdoor">
+                <img class=" img2 " src=" images/dia-diem-to-chuc-team-building.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href="
+                        images/dia-diem-to-chuc-team-building.jpg " data-lightbox=" gallery "></a>
+                </div>
+            </div>
+
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom outdoor" data-item="outdoor">
+                <img class=" img2 " src=" images/outdoor2.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/outdoor2.jpg " data-lightbox="
+                        gallery "></a>
+                </div>
+            </div>
+
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom outdoor" data-item="outdoor">
+                <img class=" img2 " src=" images/picnic.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/picnic.jpg " data-lightbox=" gallery "></a>
+                </div>
+            </div>
+
+            <!-- food and drinks  -->
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="drink">
+                <img class=" img2 " src=" images/menu1.jpeg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/menu1.jpeg " data-lightbox=" gallery "></a>
+                </div>
+            </div>
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="drink">
+                <img class=" img2 " src=" images/menu11.jpeg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/menu11.jpeg " data-lightbox=" gallery "></a>
+                </div>
+            </div>
+
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="drink">
+                <img class=" img2 " src=" images/menu12.jpeg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/menu12.jpeg " data-lightbox=" gallery "></a>
+                </div>
+            </div>
+
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="drink">
+                <img class=" img2 " src=" images/menu13.jpeg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/menu13.jpeg " data-lightbox=" gallery "></a>
+                </div>
+            </div>
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="drink">
+                <img class=" img2 " src=" images/nuoc-co-ga.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/nuoc-co-ga.jpg " data-lightbox="
+                        gallery "></a>
+                </div>
+            </div>
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="drink">
+                <img class=" img2 " src=" images/wine.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/wine.jpg " data-lightbox=" gallery "></a>
+                </div>
+            </div>
+
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="drink">
+                <img class=" img2 " src=" images/fast-food1.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/fast-food1.jpg " data-lightbox="
+                        gallery "></a>
+                </div>
+            </div>
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="drink">
+                <img class=" img2 " src=" images/food-drinks.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/food-drinks.jpg " data-lightbox="
+                        gallery "></a>
+                </div>
+            </div>
+            <div class=" item-gallery isotope-item bo-rad-10 hov-img-zoom" data-item="drink">
+                <img class=" img2 " src=" images/food-drinks1.jpg " alt=" IMG-GALLERY ">
+
+                <div class=" overlay-item-gallery trans-0-4 flex-c-m ">
+                    <a class=" btn-show-gallery flex-c-m fa fa-search " href=" images/food-drinks1.jpg " data-lightbox="
+                        gallery "></a>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- <div class=" pagination flex-c-m flex-w p-l-15 p-r-15 m-t-24 m-b-50 ">
+            <a href=" # " class=" item-pagination flex-c-m trans-0-4 active-pagination ">1</a>
+            <a href=" # " class=" item-pagination flex-c-m trans-0-4 ">2</a>
+            <a href=" # " class=" item-pagination flex-c-m trans-0-4 ">3</a>
+        </div> -->
+    </div>
+
+
+
+    <!-- Sign up -->
+    <div class=" section-signup bg1-pattern p-t-85 p-b-85 ">
+        <form id=" form " class=" flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5 ">
+            <span class=" txt5 m-10 ">
+                Specials Sign up
+            </span>
+
+            <div class=" wrap-input-signup size17 bo2 bo-rad-10 bgwhite pos-relative txt10 m-10 ">
+                <input id=" email " class=" bo-rad-10 sizefull txt10 p-l-20 " type=" email " name=" email " placeholder="
+                        Email Adrress ">
+                <i class=" fa fa-envelope ab-r-m m-r-18 " aria-hidden=" true "></i>
+            </div>
+
+            <!-- Button3 -->
+            <button onclick=" myFunction() " type=" submit " class=" btn3 flex-c-m size18 txt11 trans-0-4 m-10 ">
+                Sign-up
+            </button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class=" bg1 ">
+        <div class=" container p-t-40 p-b-70 ">
+            <div class=" row ">
+                <div class=" col-sm-6 col-md-4 p-t-50 ">
+                    <!-- - -->
+                    <h4 class=" txt13 m-b-33 ">
+                        Contact Us
+                    </h4>
+
+                    <ul class=" m-b-70 ">
+                        <li class=" txt14 m-b-14 ">
+                            <i class=" fa fa-map-marker fs-16 dis-inline-block size19 " aria-hidden=" true "></i> 8th floor, 379 Hudson St, New York, NY 10018
+                        </li>
+
+                        <li class=" txt14 m-b-14 ">
+                            <i class=" fa fa-phone fs-16 dis-inline-block size19 " aria-hidden=" true "></i> (+1) 96 716 6879
+                        </li>
+
+                        <li class=" txt14 m-b-14 ">
+                            <i class=" fa fa-envelope fs-13 dis-inline-block size19 " aria-hidden=" true "></i> contact@site.com
+                        </li>
+                    </ul>
                 </div>
 
-                <!-- Menu -->
-                <div class="wrap_menu p-l-45 p-l-0-xl">
-                    <nav class="menu">
-                        <ul class="main_menu">
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
+                <div class=" col-sm-6 col-md-4 p-t-50 ">
+                    <!-- - -->
+                    <h4 class=" txt13 m-b-33 ">
+                        Latest twitter
+                    </h4>
 
-                            <li>
-                                <a href="event.html">Event</a>
-                            </li>
+                    <div class=" m-b-25 ">
+                        <span class=" fs-13 color2 m-r-5 ">
+                            <i class=" fa fa-twitter " aria-hidden=" true "></i>
+                        </span>
+                        <a href=" # " class=" txt15 ">
+                            @colorlib
+                        </a>
 
-                            <li class="nav-item dropdown dropdown-slide">
-                                <a class="nav-link" href="outdoorService.html" data-toggle="dropdown">Service</a>
-                                <!-- Dropdown list -->
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="outdoorService.html">Outdoor Service</a>
-                                    <a class="dropdown-item" href="packageWeddingService.html">Package Wedding Service</a>
-                                    <a class="dropdown-item" href="birthdayParty.html">Birthday Party</a>
-                                    <a class="dropdown-item" href="organizeSeminars.html">Organize Seminars,Conferences</a>
-                                    <a class="dropdown-item" href="exhibition.html">Exhibition</a>
-                                </div>
-                            </li>
+                        <p class=" txt14 m-b-18 ">
+                            Activello is a good option. It has a slider built into that displays the featured image in the slider.
+                            <a href=" # " class=" txt15 ">
+                                https://buff.ly/2zaSfAQ
+                            </a>
+                        </p>
 
-                            <li>
-                                <a href="gallery.html">Gallery</a>
-                            </li>
+                        <span class=" txt16 ">
+                            21 Dec 2017
+                        </span>
+                    </div>
 
-                            <li>
-                                <a href="about.html">About</a>
-                            </li>
-                            <li>
-                                <a href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <div>
+                        <span class=" fs-13 color2 m-r-5 ">
+                            <i class=" fa fa-twitter " aria-hidden=" true "></i>
+                        </span>
+                        <a href=" # " class=" txt15 ">
+                            @colorlib
+                        </a>
+
+                        <p class=" txt14 m-b-18 ">
+                            Activello is a good option. It has a slider built into that displays
+                            <a href=" # " class=" txt15 ">
+                                https://buff.ly/2zaSfAQ
+                            </a>
+                        </p>
+
+                        <span class=" txt16 ">
+                            21 Dec 2017
+                        </span>
+                    </div>
                 </div>
 
-                <!-- Social -->
-                <div class="social flex-w flex-l-m p-r-20">
-                    <a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a>
+                <div class=" col-sm-6 col-md-4 p-t-50 ">
+                    <!-- - -->
+                    <h4 class=" txt13 m-b-38 ">
+                        Gallery
+                    </h4>
+
+                    <!-- Gallery footer -->
+                    <div class=" wrap-gallery-footer flex-w ">
+                        <a class=" item-gallery-footer wrap-pic-w " href=" images/photo-gallery-01.jpg " data-lightbox="
+                        gallery-footer ">
+                            <img src=" images/2.jpg " alt=" GALLERY ">
+                        </a>
+
+                        <a class=" item-gallery-footer wrap-pic-w " href=" images/photo-gallery-02.jpg " data-lightbox="
+                        gallery-footer ">
+                            <img src=" images/2-18.jpg " alt=" GALLERY ">
+                        </a>
+
+                        <a class=" item-gallery-footer wrap-pic-w " href=" images/photo-gallery-03.jpg " data-lightbox="
+                        gallery-footer ">
+                            <img src=" images/3.jpg " alt=" GALLERY ">
+                        </a>
+
+                        <a class=" item-gallery-footer wrap-pic-w " href=" images/photo-gallery-04.jpg " data-lightbox="
+                        gallery-footer ">
+                            <img src=" images/4.jpg " alt=" GALLERY ">
+                        </a>
+
+                        <a class=" item-gallery-footer wrap-pic-w " href=" images/photo-gallery-05.jpg " data-lightbox="
+                        gallery-footer ">
+                            <img src=" images/11.jpg " alt=" GALLERY ">
+                        </a>
+
+                        <a class=" item-gallery-footer wrap-pic-w " href=" images/photo-gallery-06.jpg " data-lightbox="
+                        gallery-footer ">
+                            <img src=" images/16.jpg " alt=" GALLERY ">
+                        </a>
+
+                        <a class=" item-gallery-footer wrap-pic-w " href=" images/photo-gallery-07.jpg " data-lightbox="
+                        gallery-footer ">
+                            <img src=" images/1860d8b827fcc6dabfc55b0585779886.jpg " alt=" GALLERY ">
+                        </a>
+
+                        <a class=" item-gallery-footer wrap-pic-w " href=" images/photo-gallery-08.jpg " data-lightbox="
+                        gallery-footer ">
+                            <img src=" images/alo-tour-team-building12.jpg " alt=" GALLERY ">
+                        </a>
+
+                        <a class=" item-gallery-footer wrap-pic-w " href=" images/photo-gallery-09.jpg " data-lightbox="
+                        gallery-footer ">
+                            <img src=" images/anh-cuoi.jpg " alt=" GALLERY ">
+                        </a>
+
+                        <a class=" item-gallery-footer wrap-pic-w " href=" images/photo-gallery-10.jpg " data-lightbox="
+                        gallery-footer ">
+                            <img src=" images/cac-em-nho-thich-thu-vay-quanh-chu-he-van-bong.jpg " alt=" GALLERY ">
+                        </a>
+
+                        <a class=" item-gallery-footer wrap-pic-w " href=" images/photo-gallery-11.jpg " data-lightbox="
+                        gallery-footer ">
+                            <img src=" images/Hoi-nghi-tri-an-khach-hang.jpg " alt=" GALLERY ">
+                        </a>
+
+                        <a class=" item-gallery-footer wrap-pic-w " href=" images/photo-gallery-12.jpg " data-lightbox="
+                        gallery-footer ">
+                            <img src=" images/lo-trinh-nhung-viec-can-lam-de-dam-cuoi-duoc-tron-ven-nhat-12.jpg " alt="
+                        GALLERY ">
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </div>
-</header>
 
-<!-- Title Page -->
-<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(images/DX7814-1.jpg);">
-    <h2 class="tit6 t-center">
-        Gallery
-    </h2>
-</section>
+        <div class=" end-footer bg2 ">
+            <div class=" container ">
+                <div class=" flex-sb-m flex-w p-t-22 p-b-22 ">
+                    <div class=" p-t-5 p-b-5 ">
+                        <a href=" # " class=" fs-15 c-white "><i class=" fa fa-tripadvisor "
+                                aria-hidden=" true "></i></a>
+                        <a href=" # " class=" fs-15 c-white "><i class=" fa fa-facebook m-l-18 "
+                                aria-hidden=" true "></i></a>
+                        <a href=" # " class=" fs-15 c-white "><i class=" fa fa-twitter m-l-18 "
+                                aria-hidden=" true "></i></a>
+                    </div>
 
-<div class="section-gallery p-t-118 p-b-100">
-    <div class="wrap-label-gallery filter-tope-group size27 flex-w flex-sb-m m-l-r-auto flex-col-c-sm p-l-15 p-r-15 m-b-60">
-        <button class="label-gallery txt26 trans-0-4 is-actived" data-filter="*">
-            All Photo
-        </button>
-
-        <button class="label-gallery txt26 trans-0-4" data-filter=".wedding">
-            Wedding
-        </button>
-
-        <button class="label-gallery txt26 trans-0-4" data-filter=".birthday">
-            Birthday
-        </button>
-
-        <button class="label-gallery txt26 trans-0-4" data-filter=".holiday">
-            Holiday
-        </button>
-
-        <button class="label-gallery txt26 trans-0-4" data-filter=".conference">
-            Conference
-        </button>
-    </div>
-
-    <div class="wrap-gallery isotope-grid flex-w p-l-25 p-r-25">
-        <!-- - -->
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/lo-trinh-nhung-viec-can-lam-de-dam-cuoi-duoc-tron-ven-nhat-12.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/lo-trinh-nhung-viec-can-lam-de-dam-cuoi-duoc-tron-ven-nhat-12.jpg" data-lightbox="gallery"></a>
+                    <div class=" txt17 p-r-20 p-t-5 p-b-5 ">
+                        Copyright &copy; 2018 All rights reserved by T2106</div>
+                </div>
             </div>
         </div>
-
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/cake.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/cake.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/dia-diem-cuoi4.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/dia-diem-cuoi4.jpg data-lightbox="gallery"></a>
-            </div>
-        </div>
-
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/birthday.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/birthday.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/bi.webp" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/bi.webp" data-lightbox="gallery"></a>
-            </div>
-        </div>
-
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/banh-sinh-nhat.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/banh-sinh-nhat.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/hoi-thao.jpg " alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/hoi-thao.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/hoi-thao1.png" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/hoi-thao1.png" data-lightbox="gallery"></a>
-            </div>
-        </div>
-
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/hoi-thao2.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/hoi-thao2.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/dia-diem-to-chuc-team-building.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/dia-diem-to-chuc-team-building.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/outdoor2.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/outdoor2.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/picnic.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/picnic.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/trien-lam.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/trien-lam.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/trien-lam1.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/trien-lam1.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/trien-lam2.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/trien-lam2.jpg"  data-lightbox="gallery"></a>
-            </div>
-        </div>
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/wedding1.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/wedding1.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/wedding.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/wedding.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/wedding2.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/wedding2.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/trung-tam-hoi-cho-trien-lam-da-nang.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/trung-tam-hoi-cho-trien-lam-da-nang.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/trung-tam-hoi-nghi-quoc-gia.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/trung-tam-hoi-nghi-quoc-gia.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/trung-tam-hoi-cho-và-trien-lam-sai-gon-secc-1.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/trung-tam-hoi-cho-và-trien-lam-sai-gon-secc-1.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/trang-tri-san-khau.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/trang-tri-san-khau.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/sound-light.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/sound-light.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/sound-light2.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/sound-light2.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/way.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/way.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/red-carpet.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/red-carpet.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/hallway.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/hallway.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/menu1.jpeg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/menu1.jpeg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/menu11.jpeg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/menu11.jpeg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/menu12.jpeg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/menu12.jpeg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/menu13.jpeg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/menu13.jpeg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/nuoc-co-ga.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/nuoc-co-ga.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/wine.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/wine.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/fast-food1.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/fast-food1.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/food-drinks.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/food-drinks.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
-        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom wedding">
-            <img class="img2" src="images/food-drinks1.jpg" alt="IMG-GALLERY">
-
-            <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/food-drinks1.jpg" data-lightbox="gallery"></a>
-            </div>
-        </div>
+    </footer>
 
 
-    </div>
-    <div class="pagination flex-c-m flex-w p-l-15 p-r-15 m-t-24 m-b-50">
-        <a href="#" class="item-pagination flex-c-m trans-0-4 active-pagination">1</a>
-        <a href="#" class="item-pagination flex-c-m trans-0-4">2</a>
-        <a href="#" class="item-pagination flex-c-m trans-0-4">3</a>
-    </div>
-</div>
-
-
-<!-- Sign up -->
-<div class="section-signup bg1-pattern p-t-85 p-b-85">
-    <form id="form" class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5">
-        <span class="txt5 m-10">
-            Specials Sign up
+    <!-- Back to top -->
+    <div class=" btn-back-to-top bg0-hov " id=" myBtn ">
+        <span class=" symbol-btn-back-to-top ">
+            <i class=" fa fa-angle-double-up " aria-hidden=" true "></i>
         </span>
-
-        <div class="wrap-input-signup size17 bo2 bo-rad-10 bgwhite pos-relative txt10 m-10">
-            <input id="email" class="bo-rad-10 sizefull txt10 p-l-20" type="email" name="email" placeholder="Email Adrress">
-            <i class="fa fa-envelope ab-r-m m-r-18" aria-hidden="true"></i>
-        </div>
-
-        <!-- Button3 -->
-        <button onclick="myFunction()" type="submit" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">
-            Sign-up
-        </button>
-    </form>
-</div>
-
-<!-- Footer -->
-<footer class="bg1">
-    <div class="container p-t-40 p-b-70">
-        <div class="row">
-            <div class="col-sm-6 col-md-4 p-t-50">
-                <!-- - -->
-                <h4 class="txt13 m-b-33">
-                    Contact Us
-                </h4>
-
-                <ul class="m-b-70">
-                    <li class="txt14 m-b-14">
-                        <i class="fa fa-map-marker fs-16 dis-inline-block size19" aria-hidden="true"></i>
-                        8th floor, 379 Hudson St, New York, NY 10018
-                    </li>
-
-                    <li class="txt14 m-b-14">
-                        <i class="fa fa-phone fs-16 dis-inline-block size19" aria-hidden="true"></i>
-                        (+1) 96 716 6879
-                    </li>
-
-                    <li class="txt14 m-b-14">
-                        <i class="fa fa-envelope fs-13 dis-inline-block size19" aria-hidden="true"></i>
-                        contact@site.com
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-sm-6 col-md-4 p-t-50">
-                <!-- - -->
-                <h4 class="txt13 m-b-33">
-                    Latest twitter
-                </h4>
-
-                <div class="m-b-25">
-						<span class="fs-13 color2 m-r-5">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</span>
-                    <a href="#" class="txt15">
-                        @colorlib
-                    </a>
-
-                    <p class="txt14 m-b-18">
-                        Activello is a good option. It has a slider built into that displays the featured image in the slider.
-                        <a href="#" class="txt15">
-                            https://buff.ly/2zaSfAQ
-                        </a>
-                    </p>
-
-                    <span class="txt16">
-							21 Dec 2017
-						</span>
-                </div>
-
-                <div>
-						<span class="fs-13 color2 m-r-5">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</span>
-                    <a href="#" class="txt15">
-                        @colorlib
-                    </a>
-
-                    <p class="txt14 m-b-18">
-                        Activello is a good option. It has a slider built into that displays
-                        <a href="#" class="txt15">
-                            https://buff.ly/2zaSfAQ
-                        </a>
-                    </p>
-
-                    <span class="txt16">
-							21 Dec 2017
-						</span>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 p-t-50">
-                <!-- - -->
-                <h4 class="txt13 m-b-38">
-                    Gallery
-                </h4>
-
-                <!-- Gallery footer -->
-                <div class="wrap-gallery-footer flex-w">
-                    <a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
-                        <img src="images/2.jpg" alt="GALLERY">
-                    </a>
-
-                    <a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
-                        <img src="images/2-18.jpg" alt="GALLERY">
-                    </a>
-
-                    <a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
-                        <img src="images/3.jpg" alt="GALLERY">
-                    </a>
-
-                    <a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-04.jpg" data-lightbox="gallery-footer">
-                        <img src="images/4.jpg" alt="GALLERY">
-                    </a>
-
-                    <a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-05.jpg" data-lightbox="gallery-footer">
-                        <img src="images/11.jpg" alt="GALLERY">
-                    </a>
-
-                    <a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-06.jpg" data-lightbox="gallery-footer">
-                        <img src="images/16.jpg" alt="GALLERY">
-                    </a>
-
-                    <a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-07.jpg" data-lightbox="gallery-footer">
-                        <img src="images/1860d8b827fcc6dabfc55b0585779886.jpg" alt="GALLERY">
-                    </a>
-
-                    <a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-08.jpg" data-lightbox="gallery-footer">
-                        <img src="images/alo-tour-team-building12.jpg" alt="GALLERY">
-                    </a>
-
-                    <a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-09.jpg" data-lightbox="gallery-footer">
-                        <img src="images/anh-cuoi.jpg" alt="GALLERY">
-                    </a>
-
-                    <a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-10.jpg" data-lightbox="gallery-footer">
-                        <img src="images/cac-em-nho-thich-thu-vay-quanh-chu-he-van-bong.jpg" alt="GALLERY">
-                    </a>
-
-                    <a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
-                        <img src="images/Hoi-nghi-tri-an-khach-hang.jpg" alt="GALLERY">
-                    </a>
-
-                    <a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-12.jpg" data-lightbox="gallery-footer">
-                        <img src="images/lo-trinh-nhung-viec-can-lam-de-dam-cuoi-duoc-tron-ven-nhat-12.jpg" alt="GALLERY">
-                    </a>
-                </div>
-
-            </div>
-        </div>
     </div>
 
-    <div class="end-footer bg2">
-        <div class="container">
-            <div class="flex-sb-m flex-w p-t-22 p-b-22">
-                <div class="p-t-5 p-b-5">
-                    <a href="#" class="fs-15 c-white"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
-                    <a href="#" class="fs-15 c-white"><i class="fa fa-facebook m-l-18" aria-hidden="true"></i></a>
-                    <a href="#" class="fs-15 c-white"><i class="fa fa-twitter m-l-18" aria-hidden="true"></i></a>
-                </div>
-
-                <div class="txt17 p-r-20 p-t-5 p-b-5">
-                    Copyright &copy; 2018 All rights reserved  by T2106</div>
-            </div>
-        </div>
-    </div>
-</footer>
+    <!-- Container Selection1 -->
+    <div id=" dropDownSelect1 "></div>
 
 
-<!-- Back to top -->
-<div class="btn-back-to-top bg0-hov" id="myBtn">
-		<span class="symbol-btn-back-to-top">
-			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
-		</span>
-</div>
+    <script type=" text/javascript " src=" public/jquery/jquery-3.2.1.min.js "></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js "></script>
+    <script type=" text/javascript " src=" public/animsition/js/animsition.min.js "></script>
+    <!--===============================================================================================-->
+    <script type=" text/javascript " src=" public/bootstrap/js/popper.js "></script>
+    <script type=" text/javascript " src=" public/bootstrap/js/bootstrap.min.js "></script>
+    <!--===============================================================================================-->
+    <script type=" text/javascript " src=" public/select2/select2.min.js "></script>
+    <!--===============================================================================================-->
+    <script type=" text/javascript " src=" public/daterangepicker/moment.min.js "></script>
+    <script type=" text/javascript " src=" public/daterangepicker/daterangepicker.js "></script>
+    <!--===============================================================================================-->
+    <script type=" text/javascript " src=" public/slick/slick.min.js "></script>
+    <script type=" text/javascript " src=" js/slick-custom.js "></script>
+    <!--===============================================================================================-->
+    <script type=" text/javascript " src=" public/parallax100/parallax100.js "></script>
+    <script type=" text/javascript ">
+        $('.parallax100').parallax100();
+    </script>
+    <!--===============================================================================================-->
+    <script type=" text/javascript " src=" public/countdowntime/countdowntime.js "></script>
+    <!--===============================================================================================-->
+    <script type=" text/javascript " src=" public/lightbox2/js/lightbox.min.js "></script>
+    <!--===============================================================================================-->
+    <script src=" js/main.js "></script>
 
-<!-- Container Selection1 -->
-<div id="dropDownSelect1"></div>
-
-
-<script type="text/javascript" src="public/jquery/jquery-3.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
-<script type="text/javascript" src="public/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-<script type="text/javascript" src="public/bootstrap/js/popper.js"></script>
-<script type="text/javascript" src="public/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-<script type="text/javascript" src="public/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-<script type="text/javascript" src="public/daterangepicker/moment.min.js"></script>
-<script type="text/javascript" src="public/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-<script type="text/javascript" src="public/slick/slick.min.js"></script>
-<script type="text/javascript" src="js/slick-custom.js"></script>
-<!--===============================================================================================-->
-<script type="text/javascript" src="public/parallax100/parallax100.js"></script>
-<script type="text/javascript">
-    $('.parallax100').parallax100();
-</script>
-<!--===============================================================================================-->
-<script type="text/javascript" src="public/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-<script type="text/javascript" src="public/lightbox2/js/lightbox.min.js"></script>
-<!--===============================================================================================-->
-<script src="js/main.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
-<script>
-    $(function () {
-        $('#form').validate({
-            rules: {
-                email: {
-                    required: true,
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js "></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js "></script>
+    <script>
+        $(function() {
+            $('#form').validate({
+                rules: {
+                    email: {
+                        required: true,
+                    },
                 },
-            },
-            messages: {
-                email: {
-                    required: 'Please Enter Email',
-                    maxlength: 'Email name is limited to 255 characters',
-                    email: 'Please enter true email'
+                messages: {
+                    email: {
+                        required: 'Please Enter Email',
+                        maxlength: 'Email name is limited to 255 characters',
+                        email: 'Please enter true email'
+                    },
                 },
-            },
+            })
         })
-    })
-    function myFunction() {
-        if ($("#email").val()){
-            alert("Successful Registration");
+
+        function myFunction() {
+            if ($(" #email ").val()) {
+                alert(" Successful Registration ");
+            }
         }
-    }
-</script>
+
+
+        // chia Anh
+        const image_item = document.querySelectorAll(".item-gallery")
+        const btn = document.querySelectorAll(".label-gallery")
+
+        Array.from(btn).forEach(function(element) {
+            element.addEventListener('click', function(event) {
+
+                let name_filter = element.dataset.filter;
+                Array.from(image_item).forEach(function(ele) {
+                    if (ele.dataset.item === name_filter || name_filter === 'all') {
+                        ele.style.display = 'block';
+                    } else {
+                        ele.style.display = 'none';
+                    }
+                })
+            })
+
+        })
+    </script>
 
 </body>
+
 </html>
